@@ -6,7 +6,7 @@ echo --- Using profile "%MSTEAMSPROFILE%"
 
 :: Change USERPROFILE environment variable.
 set "CURRENTUSERPROFILE=%USERPROFILE%"
-set "USERPROFILE=%CURRENTUSERPROFILE%\CustomProfiles\%MSTEAMSPROFILE%"
+set "USERPROFILE=%CURRENTUSERPROFILE%\TeamsProfiles\%MSTEAMSPROFILE%"
 
 :: Ensure there is a Downloads folder.
 mkdir "%USERPROFILE%\Downloads"
@@ -15,4 +15,3 @@ mkdir "%USERPROFILE%\Downloads"
 echo --- Launching MS Teams with profile %MSTEAMSPROFILE%
 cd "%CURRENTUSERPROFILE%\AppData\Local\Microsoft\Teams"
 "%CURRENTUSERPROFILE%\AppData\Local\Microsoft\Teams\Update.exe" --processStart "Teams.exe"
-
